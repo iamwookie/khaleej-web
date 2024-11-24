@@ -10,7 +10,7 @@ export default {
 	plugins: [require('daisyui')],
 
 	daisyui: {
-        base: false,
+		base: false,
 		themes: [
 			{
 				khaleej: {
@@ -26,7 +26,7 @@ export default {
 					'base-200': '#15191e', // gray
 					'base-300': '#000000', // black
 					'base-content': '#ffffff', // white
- 					info: '#0000ff',
+					info: '#0000ff',
 					'info-content': '#c6dbff',
 					success: '#00ff00',
 					'success-content': '#001600',
