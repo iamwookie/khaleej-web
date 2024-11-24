@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { Home, Rocket, Plane, Radar, Info } from 'lucide-svelte';
 
-    const onclick = (e: any) => {
-        for (const details of document.querySelectorAll('details')) {
-            if (!details.contains(e.target)) details.open = false;
-        }
-    }
+	const onclick = (e: any) => {
+		for (const details of document.querySelectorAll('details')) {
+			if (!details.contains(e.target)) details.open = false;
+		}
+	};
 </script>
 
-<svelte:document {onclick}/>
+<svelte:document {onclick} />
 
 <div class="navbar justify-between bg-transparent">
 	<a href="/" aria-label="Home">

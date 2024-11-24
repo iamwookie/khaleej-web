@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Navbar from './Navbar.svelte';
+	import Navbar from './Navbar.svelte';
 </script>
 
 <header class="fixed w-full">
-    <Navbar />
+	<Navbar />
 </header>
