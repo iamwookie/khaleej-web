@@ -1,7 +1,11 @@
 <main class="flex flex-col">
 	<section class="h-screen">
-		<div class="container h-full mx-auto">
-			<div class="flex flex-col h-full justify-center">Landing</div>
+		<div class="h-full bg-black/30">
+			<div class="container flex flex-col justify-center h-full md:px-0">
+				<h2 class="text-4xl md:text-6xl">Welcome to</h2>
+				<h1 class="text-5xl md:text-7xl text-secondary">Khaleej vACC</h1>
+				<h3 class="text-sm md:text-xl">Home of the Bahrain and Kuwait region on VATSIM.</h3>
+			</div>
 		</div>
 	</section>
 
