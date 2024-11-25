@@ -25,9 +25,9 @@
 				</summary>
 
 				<ul class="menu menu-vertical bg-accent bg-opacity-50">
-					<li><a href="/" class="hover:bg-accent">New to VATSIM</a></li>
-					<li><a href="/" class="hover:bg-accent">Join Khaleej</a></li>
-					<li><a href="/" class="hover:bg-accent">ATC Training</a></li>
+					<li><a href="/new" class="hover:bg-accent">New to VATSIM</a></li>
+					<li><a href="/join" class="hover:bg-accent">Join Khaleej</a></li>
+					<li><a href="/atc/training" class="hover:bg-accent">ATC Training</a></li>
 				</ul>
 			</details>
 		</li>
@@ -40,9 +40,9 @@
 
 				<ul class="menu menu-vertical bg-accent bg-opacity-50">
 					<li><a href="/" class="hover:bg-accent">Airports & Charts</a></li>
-					<li><a href="/" class="hover:bg-accent">Events</a></li>
-					<li><a href="/" class="hover:bg-accent">Event Booking</a></li>
-					<li><a href="/" class="hover:bg-accent">ATC Feedback</a></li>
+					<li><a href="/events" class="hover:bg-accent">Events</a></li>
+					<li><a href="/events/booking" class="hover:bg-accent">Event Booking</a></li>
+					<li><a href="/atc/feedback" class="hover:bg-accent">ATC Feedback</a></li>
 				</ul>
 			</details>
 		</li>
@@ -54,9 +54,9 @@
 				</summary>
 
 				<ul class="menu menu-vertical bg-accent bg-opacity-50">
-					<li><a href="/" class="hover:bg-accent">Training</a></li>
-					<li><a href="/" class="hover:bg-accent">Roster</a></li>
-					<li><a href="/" class="hover:bg-accent">Documentation</a></li>
+					<li><a href="/atc/training" class="hover:bg-accent">Training</a></li>
+					<li><a href="/atc/roster" class="hover:bg-accent">Roster</a></li>
+					<li><a href="/atc/docs" class="hover:bg-accent">Documentation</a></li>
 				</ul>
 			</details>
 		</li>
@@ -68,10 +68,10 @@
 				</summary>
 
 				<ul class="menu menu-vertical bg-accent bg-opacity-50">
-					<li><a href="/" class="hover:bg-accent">Staff</a></li>
-					<li><a href="/" class="hover:bg-accent">Policies</a></li>
+					<li><a href="/staff" class="hover:bg-accent">Staff</a></li>
+					<li><a href="/policies" class="hover:bg-accent">Policies</a></li>
+					<li><a href="/contact" class="hover:bg-accent">Contact</a></li>
 					<li><a href="/" class="hover:bg-accent">HQ</a></li>
-					<li><a href="/" class="hover:bg-accent">Contact</a></li>
 				</ul>
 			</details>
 		</li>
