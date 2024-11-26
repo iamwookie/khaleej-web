@@ -8,7 +8,11 @@ export default {
 			center: true,
 			padding: '2rem'
 		},
-		extend: {}
+		extend: {
+			colors: {
+				discord: 'oklch(var(--discord) / <alpha-value>)' // discord blue
+			}
+		}
 	},
 
 	plugins: [require('daisyui')],
@@ -37,7 +41,10 @@ export default {
 					warning: '#00ff00',
 					'warning-content': '#001600',
 					error: '#ff0000',
-					'error-content': '#160000'
+					'error-content': '#160000',
+
+					// custom colours
+					'--discord': '64.74% 0.1243 270.62' // discord blue
 				}
 			}
 		]

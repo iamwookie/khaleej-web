@@ -13,3 +13,4 @@
 
 <Header />
 {@render children()}
+<footer>Hello this is my footer</footer>
