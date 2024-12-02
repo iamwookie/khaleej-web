@@ -19,7 +19,6 @@ export default {
 	plugins: [daisyui],
 
 	daisyui: {
-		base: false,
 		themes: [
 			{
 				khaleej: {

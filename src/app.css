@@ -3,6 +3,7 @@
 @import 'tailwindcss/utilities';
 
 body {
+    /* change to bg base-300 for production */
 	@apply bg-base-100;
 	@apply text-base-content;
 }

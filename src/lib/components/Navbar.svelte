@@ -86,13 +86,13 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	@media (hover: hover) {
 		@supports (color: oklch(0% 0 0)) {
 			:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover,
 			:where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
 				@apply bg-accent;
-                @apply bg-opacity-50;
+				@apply bg-opacity-50;
 			}
 		}
 	}
