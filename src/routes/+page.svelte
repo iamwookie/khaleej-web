@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Discord from '$lib/components/icons/Discord.svelte';
 	import bgImage from '$lib/assets/images/bg.png';
 </script>
 
@@ -13,15 +12,13 @@
 			</div>
 		</div> -->
 		<div class="h-full bg-black/50">
-			<div class="container flex flex-col justify-center h-full md:px-0">
-				<div class="flex flex-col gap-4 max-w-md">
-					<h1 class="text-5xl font-bold">Hello there</h1>
-					<p>
-						Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut
-						repudiandae et a id nisi.
-					</p>
-					<a href="/" class="btn bg-discord mr-auto hover:bg-discord/50"><Discord class="w-5" /> Join Discord</a>
-				</div>
+			<div class="container flex flex-col justify-center h-full">
+				<h1 class="text-2xl md:text-4xl">👋 Welcome to</h1>
+				<h2 class="font-bold text-secondary text-5xl md:text-7xl">Khaleej vACC</h2>
+				<p class="mt-4 max-w-lg">
+					Embark on an exhilarating journey through the virtual skies of Bahrain and Kuwait with Khaleej vACC. Join our vibrant community on
+					VATSIM and experience the thrill of realistic air traffic control and piloting.
+				</p>
 			</div>
 		</div>
 
@@ -37,7 +34,24 @@
 		</div>
 	</section>
 
-	<p class="bg-base-300">Below the divider</p>
+	<section class="bg-base-300 py-10">
+		<div class="container flex flex-col">
+			<h2 class="text-4xl">Upcoming Events</h2>
+			<div class="divider"></div>
+		</div>
+	</section>
+
+	<section class="bg-base-300 py-10">
+		<div class="container flex flex-col">
+			<h2 class="text-4xl">Our Partners</h2>
+
+			<div class="divider"></div>
+
+			<div class="flex flex-col md:flex-row justify-center items-center gap-2 w-full">
+				<a href="https://vatsim.net/" target="_blank" aria-label="VATSIM" class="hover:opacity-50 transition-opacity">
+					<enhanced:img src="../lib/assets/images/vatsim.png" alt="Logo" class="h-28 w-auto" />
+				</a>
+			</div>
+		</div>
+	</section>
 </main>
-
-

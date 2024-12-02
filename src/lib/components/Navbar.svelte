@@ -13,37 +13,37 @@
 <div class="navbar bg-transparent px-8">
 	<div class="navbar-start">
 		<a href="/" aria-label="Home" class="hover:opacity-50 transition-opacity">
-			<enhanced:img src="../assets/images/logo_khaleej.png" alt="Logo" class="h-[100px] w-[100px]" />
+			<enhanced:img src="../assets/images/logo_khaleej.png" alt="Logo" class="h-32 w-32" />
 		</a>
 	</div>
 
-	<div class="navbar-center">
+	<div class="navbar-center hidden md:inline-flex">
 		<ul class="menu menu-horizontal gap-1 px-1">
 			<li>
 				<details>
-					<summary class="hover:bg-accent hover:bg-opacity-50">
+					<summary>
 						<Rocket size={20} /> Getting Started
 					</summary>
 
 					<ul class="menu menu-vertical bg-accent bg-opacity-50">
-						<li><a href="/new" class="hover:bg-accent">New to VATSIM</a></li>
-						<li><a href="/join" class="hover:bg-accent">Join Khaleej</a></li>
-						<li><a href="/atc/training" class="hover:bg-accent">ATC Training</a></li>
+						<li><a href="/new">New to VATSIM</a></li>
+						<li><a href="/join">Join Khaleej</a></li>
+						<li><a href="/atc/training">ATC Training</a></li>
 					</ul>
 				</details>
 			</li>
 
 			<li>
 				<details>
-					<summary class="hover:bg-accent hover:bg-opacity-50">
+					<summary>
 						<Plane size={20} /> Pilots
 					</summary>
 
 					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
-						<li><a href="/" class="hover:bg-accent">Airports & Charts</a></li>
-						<li><a href="/events" class="hover:bg-accent">Events</a></li>
-						<li><a href="/events/booking" class="hover:bg-accent">Event Booking</a></li>
-						<li><a href="/atc/feedback" class="hover:bg-accent">ATC Feedback</a></li>
+						<li><a href="/">Airports & Charts</a></li>
+						<li><a href="/events">Events</a></li>
+						<li><a href="/events/booking">Event Booking</a></li>
+						<li><a href="/atc/feedback">ATC Feedback</a></li>
 					</ul>
 				</details>
 			</li>
@@ -55,9 +55,9 @@
 					</summary>
 
 					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
-						<li><a href="/atc/training" class="hover:bg-accent">Training</a></li>
-						<li><a href="/atc/roster" class="hover:bg-accent">Roster</a></li>
-						<li><a href="/atc/docs" class="hover:bg-accent">Documentation</a></li>
+						<li><a href="/atc/training">Training</a></li>
+						<li><a href="/atc/roster">Roster</a></li>
+						<li><a href="/atc/docs">Documentation</a></li>
 					</ul>
 				</details>
 			</li>
@@ -69,19 +69,38 @@
 					</summary>
 
 					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
-						<li><a href="/staff" class="hover:bg-accent">Staff</a></li>
-						<li><a href="/policies" class="hover:bg-accent">Policies</a></li>
-						<li><a href="/contact" class="hover:bg-accent">Contact</a></li>
-						<li><a href="/" class="hover:bg-accent">HQ</a></li>
+						<li><a href="/staff">Staff</a></li>
+						<li><a href="/policies">Policies</a></li>
+						<li><a href="/contact">Contact</a></li>
+						<li><a href="/">HQ</a></li>
 					</ul>
 				</details>
 			</li>
 		</ul>
 	</div>
 
-	<div class="navbar-end">
+	<div class="navbar-end hidden md:inline-flex">
 		<div class="inline-flex flex-row">
-			<a href="/login" class="btn btn-outline btn-secondary">Join Now</a>
+			<a href="/join" class="btn btn-outline btn-secondary">Join Now</a>
 		</div>
 	</div>
 </div>
+
+<style>
+	@media (hover: hover) {
+		@supports (color: oklch(0% 0 0)) {
+			:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover,
+			:where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
+				@apply bg-accent;
+                @apply bg-opacity-50;
+			}
+		}
+	}
+
+	.menu li > *:not(ul, .menu-title, details, .btn):active,
+	.menu li > *:not(ul, .menu-title, details, .btn).active,
+	.menu li > details > summary:active {
+		@apply bg-accent;
+		@apply text-white;
+	}
+</style>
