@@ -42,10 +42,10 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col">
-			<h2 class="text-4xl">Our Partners</h2>
-
-			<div class="divider"></div>
+		<div class="container flex flex-col gap-10">
+			<div class="divider divider-accent before:bg-opacity-50 after:bg-opacity-50">
+				<h2 class="text-4xl">Our Partners</h2>
+			</div>
 
 			<div class="flex flex-col md:flex-row justify-center items-center gap-2 w-full">
 				<a href="https://vatsim.net/" target="_blank" aria-label="VATSIM" class="hover:opacity-50 transition-opacity">

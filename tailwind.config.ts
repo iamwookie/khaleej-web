@@ -28,7 +28,7 @@ export default {
 					secondary: '#d8c89f', // khaleej tan
 					'secondary-content': '#160016',
 					accent: '#d8c89f', // khaleej tan
-					'accent-content': '#001616',
+					'accent-content': '#ffffff', // white
 					neutral: '#191e24', // light gray
 					'neutral-content': '#a6adbb',
 					'base-100': '#191e24', // light gray
