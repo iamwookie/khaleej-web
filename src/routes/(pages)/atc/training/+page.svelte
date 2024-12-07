@@ -1,1 +1,0 @@
-<div>ATC Training</div>
