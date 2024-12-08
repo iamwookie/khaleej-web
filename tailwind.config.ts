@@ -10,6 +10,9 @@ export default {
 			padding: '2rem'
 		},
 		extend: {
+			fontFamily: {
+				quicksand: ['Quicksand', 'sans-serif']
+			},
 			colors: {
 				discord: 'oklch(var(--discord) / <alpha-value>)' // discord blue
 			}

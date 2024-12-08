@@ -17,12 +17,12 @@
 				<enhanced:img src="../lib/assets/images/logo_khaleej.png" alt="Logo" class="h-28 w-28" />
 
 				<div class="text-center self-center">
-					<h2 class="font-bold text-secondary text-5xl md:text-7xl">Khaleej vACC</h2>
-					<p class="max-w-lg mt-4">
+					<h2 class="font-semibold text-secondary text-5xl md:text-7xl">Khaleej vACC</h2>
+					<p class="max-w-xl mt-4">
 						Embark on an exhilarating journey through the virtual skies of Bahrain and Kuwait with Khaleej vACC. Join our vibrant
 						community on VATSIM and experience the thrill of realistic air traffic control and piloting.
 					</p>
-					<h3 class="font-bold text-2xl md:text-4xl mt-2">✈️ Flying Soon...</h3>
+					<h3 class="font-semibold text-2xl md:text-4xl mt-4">✈️ Flying Soon...</h3>
 				</div>
 			</div>
 		</div>
