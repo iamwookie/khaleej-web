@@ -25,7 +25,7 @@
 						<Rocket size={20} /> Getting Started
 					</summary>
 
-					<ul class="menu menu-vertical bg-accent bg-opacity-50">
+					<ul class="menu menu-vertical bg-secondary bg-opacity-50">
 						<li><a href="/new">New to VATSIM</a></li>
 						<li><a href="/join">Join Khaleej</a></li>
 						<li><a href="/atc/training">ATC Training</a></li>
@@ -39,7 +39,7 @@
 						<Plane size={20} /> Pilots
 					</summary>
 
-					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
+					<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
 						<li><a href="/">Airports & Charts</a></li>
 						<li><a href="/events">Events</a></li>
 						<li><a href="/events/booking">Event Booking</a></li>
@@ -50,11 +50,11 @@
 
 			<li>
 				<details>
-					<summary class="hover:bg-accent hover:bg-opacity-50">
+					<summary class="hover:bg-secondary hover:bg-opacity-50">
 						<Radar size={20} /> Controllers
 					</summary>
 
-					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
+					<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
 						<li><a href="/atc/training">Training</a></li>
 						<li><a href="/atc/roster">Roster</a></li>
 						<li><a href="/atc/docs">Documentation</a></li>
@@ -64,11 +64,11 @@
 
 			<li>
 				<details>
-					<summary class="hover:bg-accent hover:bg-opacity-50">
+					<summary class="hover:bg-secondary hover:bg-opacity-50">
 						<Info size={20} /> About
 					</summary>
 
-					<ul class="menu menu-vertical bg-accent bg-opacity-50 min-w-max">
+					<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
 						<li><a href="/staff">Staff</a></li>
 						<li><a href="/policies">Policies</a></li>
 						<li><a href="/contact">Contact</a></li>
@@ -91,7 +91,7 @@
 		@supports (color: oklch(0% 0 0)) {
 			:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover,
 			:where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
-				@apply bg-accent;
+				@apply bg-secondary;
 				@apply bg-opacity-50;
 			}
 		}
@@ -100,7 +100,7 @@
 	.menu li > *:not(ul, .menu-title, details, .btn):active,
 	.menu li > *:not(ul, .menu-title, details, .btn).active,
 	.menu li > details > summary:active {
-		@apply bg-accent;
+		@apply bg-secondary;
 		@apply text-white;
 	}
 </style>

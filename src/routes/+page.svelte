@@ -3,7 +3,7 @@
 </script>
 
 <main class="flex flex-col">
-	<section class="h-screen bg-cover bg-center bg-no-repeat" style="background-image: url({bgImage});">
+	<section class="bg-cover bg-center bg-no-repeat h-screen" style="background-image: url({bgImage});">
 		<!-- <div class="h-full bg-black/50">
 			<div class="container flex flex-col justify-center h-full md:px-0">
 				<h2 class="text-4xl md:text-6xl">Welcome to</h2>
@@ -11,10 +11,10 @@
 				<h3 class="text-sm md:text-xl">Home of the Bahrain and Kuwait region on VATSIM.</h3>
 			</div>
 		</div> -->
-		<div class="h-full bg-black/50">
+		<div class="bg-black/50 h-full">
 			<div class="container flex flex-col justify-center h-full">
-				<h1 class="text-2xl md:text-4xl">👋 Welcome to</h1>
-				<h2 class="font-bold text-secondary text-5xl md:text-7xl">Khaleej vACC</h2>
+				<h2 class="text-2xl md:text-4xl">👋 Welcome to</h2>
+				<h1 class="font-bold text-secondary text-5xl md:text-7xl">Khaleej vACC</h1>
 				<p class="mt-4 max-w-lg">
 					Embark on an exhilarating journey through the virtual skies of Bahrain and Kuwait with Khaleej vACC. Join our vibrant community on
 					VATSIM and experience the thrill of realistic air traffic control and piloting.
@@ -43,7 +43,7 @@
 
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col gap-10">
-			<div class="divider divider-accent before:bg-opacity-50 after:bg-opacity-50">
+			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50">
 				<h2 class="text-4xl">Our Partners</h2>
 			</div>
 

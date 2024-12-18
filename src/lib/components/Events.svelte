@@ -1,7 +1,5 @@
 <script lang="ts">
-    let { events } = $props();
+	let { events } = $props();
 </script>
 
-<div>
-    Events
-</div>
+<div>Events</div>

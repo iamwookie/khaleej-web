@@ -10,6 +10,9 @@ export default {
 			padding: '2rem'
 		},
 		extend: {
+			fontFamily: {
+				quicksand: ['Quicksand', 'sans-serif']
+			},
 			colors: {
 				discord: 'oklch(var(--discord) / <alpha-value>)' // discord blue
 			}
@@ -23,17 +26,17 @@ export default {
 			{
 				khaleej: {
 					primary: '#003366', // khaleej blue
-					'primary-content': '#160016',
-					secondary: '#d8c89f', // khaleej tan
-					'secondary-content': '#160016',
-					accent: '#d8c89f', // khaleej tan
+					'primary-content': '#ffffff', // white (placeholder)
+					secondary: '#d8c8a0', // khaleej gold
+					'secondary-content': '#ffffff', // white (placeholder)
+					accent: '#d8c8a0', // khaleej gold
 					'accent-content': '#ffffff', // white
 					neutral: '#191e24', // light gray
 					'neutral-content': '#a6adbb',
 					'base-100': '#191e24', // light gray
 					'base-200': '#15191e', // gray
 					'base-300': '#000000', // black
-					'base-content': '#ffffff', // white
+					'base-content': '#ffffff', // white (placeholder)
 					info: '#0000ff',
 					'info-content': '#c6dbff',
 					success: '#00ff00',
