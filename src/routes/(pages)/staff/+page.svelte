@@ -17,10 +17,10 @@
 
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col gap-6">
-			<div class="divider text-3xl font-bold">Board</div>
+			<div class="divider text-3xl font-bold">Directorate</div>
 
 			<!-- To add: badges for roles, import from data file -->
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+			<div class="flex flex-col xl:flex-row justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
 					<!-- Optional Decorative Overlay -->
@@ -28,13 +28,65 @@
 
 					<div class="relative card-body items-center text-center text-white">
 						<h2 class="card-title text-2xl font-bold">Rashid Raikhy</h2>
-						<span>KHLJ1 • Director</span>
+						<span>• KHLJ1 •<br />Director</span>
 						<button class="btn btn-secondary w-full shadow-lg mt-4">Contact</button>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
+					<!-- Optional Decorative Overlay -->
+					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+
+					<div class="relative card-body items-center text-center text-white">
+						<h2 class="card-title text-2xl font-bold">Shaun Mclean</h2>
+						<span>• KHLJ3 •<br />ATC Training Director</span>
+						<button class="btn btn-secondary w-full shadow-lg mt-4">Contact</button>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
+					<!-- Optional Decorative Overlay -->
+					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+
+					<div class="relative card-body items-center text-center text-white">
+						<h2 class="card-title text-2xl font-bold">Vacant</h2>
+						<span>• KHLJ4 •<br />Events & Marketing Director</span>
+						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="divider text-3xl font-bold">Directorate</div>
+			<div class="divider text-3xl font-bold">Deputy Directorate</div>
+
+			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+				<!-- Card 1 -->
+				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
+					<!-- Optional Decorative Overlay -->
+					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+
+					<div class="relative card-body items-center text-center text-white">
+						<h2 class="card-title text-2xl font-bold">Vacant</h2>
+						<span>• KHLJ31 •<br />Deputy ATC Training Director</span>
+						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
+					<!-- Optional Decorative Overlay -->
+					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+
+					<div class="relative card-body items-center text-center text-white">
+						<h2 class="card-title text-2xl font-bold">Vacant</h2>
+						<span>• KHLJ41 •<br />Deputy Events & Marketing Director</span>
+						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="divider text-3xl font-bold">Members</div>
 
 			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
 				<!-- Card 1 -->
@@ -44,35 +96,19 @@
 
 					<div class="relative card-body items-center text-center text-white">
 						<h2 class="card-title text-2xl font-bold">Shaun Mclean</h2>
-						<span>KHLJ3 • ATC Training Director</span>
-						<button class="btn btn-secondary w-full shadow-lg mt-4">Contact</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="divider text-3xl font-bold">Operations</div>
-
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
-				<!-- Card 1 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Shaun Mclean</h2>
-						<span>KHLJ33 • Operations Team Member</span>
+						<span>• KHLJ33 •<br />Operations Team Member</span>
 						<button class="btn btn-secondary w-full shadow-lg mt-4">Contact</button>
 					</div>
 				</div>
 
-				<!-- Card 1 -->
+				<!-- Card 2 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
 					<!-- Optional Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
 						<h2 class="card-title text-2xl font-bold">Syed Moiz Uddin</h2>
-						<span>KHLJ42 • Events and Marketing</span>
+						<span>• KHLJ42 •<br />Events & Marketing Member</span>
 						<button class="btn btn-secondary w-full shadow-lg mt-4">Contact</button>
 					</div>
 				</div>
