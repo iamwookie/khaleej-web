@@ -4,13 +4,6 @@
 
 <main class="flex flex-col">
 	<section class="bg-cover bg-center bg-no-repeat h-screen" style="background-image: url({bgImage});">
-		<!-- <div class="h-full bg-black/50">
-			<div class="container flex flex-col justify-center h-full md:px-0">
-				<h2 class="text-4xl md:text-6xl">Welcome to</h2>
-				<h1 class="text-5xl md:text-7xl text-secondary">Khaleej vACC</h1>
-				<h3 class="text-sm md:text-xl">Home of the Bahrain and Kuwait region on VATSIM.</h3>
-			</div>
-		</div> -->
 		<div class="bg-black/50 h-full">
 			<div class="container flex flex-col justify-center h-full">
 				<h2 class="text-2xl md:text-4xl">👋 Welcome to</h2>
@@ -28,24 +21,24 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col">
-			<h2 class="text-4xl">Upcoming Events</h2>
-			<div class="divider"></div>
+		<div class="container flex flex-col gap-10">
+			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-4xl">Upcoming Events</div>
+			<div class="flex flex-col text-center">
+				<p>There are currently no upcoming events.</p>
+			</div>
 		</div>
 	</section>
 
-	<section class="bg-base-300 py-10">
+	<!-- <section class="bg-base-300 py-10">
 		<div class="container flex flex-col">
 			<h2 class="text-4xl">Upcoming Events</h2>
 			<div class="divider"></div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col gap-10">
-			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50">
-				<h2 class="text-4xl">Our Partners</h2>
-			</div>
+			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-4xl">Our Partners</div>
 
 			<div class="flex flex-col md:flex-row justify-center items-center gap-2 w-full">
 				<a href="https://vatsim.net/" target="_blank" aria-label="VATSIM" class="hover:opacity-50 transition-opacity">
