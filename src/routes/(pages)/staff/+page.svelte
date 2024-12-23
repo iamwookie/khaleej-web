@@ -7,9 +7,10 @@
 <main class="flex flex-col">
 	<section class="bg-cover bg-center bg-no-repeat h-[40vh]" style="background-image: url({bgImage});">
 		<div class="bg-black/50 h-full">
-			<div class="container flex gap-2 justify-center items-center h-full text-secondary font-bold">
-				<UsersRound size={36} />
-				<h2 class=" text-2xl md:text-4xl">Staff</h2>
+			<div class="container flex flex-col justify-center items-center h-full">
+				<div class="flex items-center gap-2 text-secondary font-bold text-2xl md:text-4xl">
+					<UsersRound size={36} /> Staff
+				</div>
 			</div>
 		</div>
 
