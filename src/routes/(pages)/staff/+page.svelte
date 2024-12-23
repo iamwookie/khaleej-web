@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { UsersRound } from 'lucide-svelte';
+
 	import bgImage from '$lib/assets/images/bg.png';
 </script>
 
