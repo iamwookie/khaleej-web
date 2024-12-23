@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Home, Rocket, Plane, Radar, Info } from 'lucide-svelte';
+	import { Rocket, Plane, Radar, Info } from 'lucide-svelte';
 
 	const onclick = (e: any) => {
 		for (const details of document.querySelectorAll('details')) {
