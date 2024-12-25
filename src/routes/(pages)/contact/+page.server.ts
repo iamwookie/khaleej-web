@@ -12,7 +12,7 @@ export const actions: Actions = {
 		// Add further email logic here, for now we will just log the data
 		console.log({ name, vatsimCid, email, message });
 
-		// Return a response to the client
-		return { success: true, fail: true };
+		// Return a response to the client, for now we just fail until we add logic
+		return { fail: true };
 	}
 };
