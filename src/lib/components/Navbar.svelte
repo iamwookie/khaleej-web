@@ -3,7 +3,7 @@
 
 	const onclick = (e: any) => {
 		for (const details of document.querySelectorAll('details')) {
-			if (!details.contains(e.target)) details.open = false;
+			if (!details.querySelector('summary')?.contains(e.target)) details.open = false;
 		}
 	};
 </script>
