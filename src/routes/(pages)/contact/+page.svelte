@@ -40,22 +40,22 @@
 
 			<form method="POST" use:enhance class="card card-body w-full">
 				<div class="form-control">
-					<label for="name" class="label"><span class="label-text">Name</span></label>
+					<label for="name" class="label"><span class="label-text">Your Name</span></label>
 					<input name="name" type="text" placeholder="Chesley Sullenberger" class="input input-bordered" required />
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="vatsimCid" class="label"><span class="label-text">VATSIM CID</span></label>
-					<input name="vatsimCid" type="number" placeholder="1514902" class="input input-bordered" required />
+					<label for="vatsimCid" class="label"><span class="label-text">Your VATSIM CID</span></label>
+					<input name="vatsimCid" type="number" placeholder="1234567" class="input input-bordered" required />
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="email" class="label"><span class="label-text">Email</span></label>
+					<label for="email" class="label"><span class="label-text">Your Email</span></label>
 					<input name="email" type="email" placeholder="example@mail.com" class="input input-bordered" required />
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="message" class="label"><span class="label-text">Description</span></label>
+					<label for="message" class="label"><span class="label-text">Message</span></label>
 					<textarea name="message" placeholder="I would like to contact you regarding..." class="textarea textarea-bordered h-24" required
 					></textarea>
 				</div>
