@@ -1,5 +1,33 @@
 <script lang="ts">
-	import { Rocket, Plane, Radar, Info, Menu } from 'lucide-svelte';
+	import {
+		// Getting Started
+		Rocket,
+		Star,
+		UserPlus,
+		GraduationCap,
+
+		// Pilots
+		Plane,
+		CalendarHeart,
+		CalendarPlus,
+		Map,
+
+		// Controllers
+		Radar,
+		Rss,
+		UserRoundSearch,
+		BookText,
+
+		// About
+		Info,
+		UsersRound,
+		HeartHandshake,
+		Mails,
+		Headset,
+
+		// Mobile
+		Menu
+	} from 'lucide-svelte';
 
 	const onclick = (e: any) => {
 		for (const details of document.querySelectorAll('details')) {
@@ -32,9 +60,9 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50">
-								<li><a href="/new">New to VATSIM</a></li>
-								<li><a href="/join">Join Khaleej</a></li>
-								<li><a href="/atc/training">ATC Training</a></li>
+								<li><a href="/new"><Star size={20} />New to VATSIM</a></li>
+								<li><a href="/join"><UserPlus size={20} />Join Khaleej</a></li>
+								<li><a href="/atc/training"><GraduationCap size={20} />ATC Training</a></li>
 							</ul>
 						</details>
 					</li>
@@ -46,9 +74,9 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
-								<li><a href="/events">Events</a></li>
-								<li><a href="/events/booking">Event Booking</a></li>
-								<li><a href="/charts">Airports & Charts</a></li>
+								<li><a href="/events"><CalendarHeart size={20} />Events</a></li>
+								<li><a href="/events/booking"><CalendarPlus size={20} />Event Booking</a></li>
+								<li><a href="/charts"><Map size={20} />Airports & Charts</a></li>
 							</ul>
 						</details>
 					</li>
@@ -60,10 +88,9 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
-								<li><a href="/atc/training">Training</a></li>
-								<li><a href="/atc/roster">Roster</a></li>
-								<li><a href="/atc/docs">Documentation</a></li>
-								<li><a href="/atc/feedback">ATC Feedback</a></li>
+								<li><a href="/atc/feedback"><Rss size={20} />ATC Feedback</a></li>
+								<li><a href="/atc/roster"><UserRoundSearch size={20} />ATC Roster</a></li>
+								<li><a href="/atc/docs"><BookText size={20} />Documentation</a></li>
 							</ul>
 						</details>
 					</li>
@@ -75,10 +102,10 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
-								<li><a href="/staff">Staff</a></li>
-								<li><a href="/policies">Policies</a></li>
-								<li><a href="/contact">Contact</a></li>
-								<li><a href="/">HQ</a></li>
+								<li><a href="/staff"><UsersRound size={20} />Staff</a></li>
+								<li><a href="/policies"><HeartHandshake size={20} />Policies</a></li>
+								<li><a href="/contact"><Mails size={20} />Contact</a></li>
+								<li><a href="/"><Headset size={20} />HQ</a></li>
 							</ul>
 						</details>
 					</li>
