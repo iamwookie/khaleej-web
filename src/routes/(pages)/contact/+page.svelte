@@ -1,7 +1,12 @@
 <script lang="ts">
-	import { Mails } from 'lucide-svelte';
+	import type { ActionData } from './$types';
+
+	import { enhance } from '$app/forms';
+	import { Mails, CircleCheck, CircleX } from 'lucide-svelte';
 
 	import bgImage from '$lib/assets/images/bg.png';
+
+	let { form } = $props<{ form: ActionData | null }>();
 </script>
 
 <main class="flex flex-col">
@@ -20,107 +25,45 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col gap-10">
-			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Directorate</div>
+		<div class="container flex flex-col items-center">
+			{#if form?.success}
+				<div role="alert" class="alert alert-success max-w-md">
+					<CircleCheck size={24} /><span>Your form has been submitted!</span>
+				</div>
+			{/if}
 
-			<!-- To add: badges for roles, import from data file -->
-			<div class="flex flex-col xl:flex-row justify-center items-center gap-8">
-				<!-- Card 1 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+			{#if form?.fail}
+				<div role="alert" class="alert alert-error max-w-md">
+					<CircleX size={24} /><span>Uh oh! Something went wrong!</span>
+				</div>
+			{/if}
 
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Rashid Raikhy</h2>
-						<span>• KHLJ1 •<br />Director</span>
-						<a href="mailto:rashid.raikhy@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">rashid.raikhy@khaleejvacc.net</code>
-					</div>
+			<form method="POST" use:enhance class="card card-body w-full">
+				<div class="form-control">
+					<label for="name" class="label"><span class="label-text">Name</span></label>
+					<input name="name" type="text" placeholder="Chesley Sullenberger" class="input input-bordered" required />
 				</div>
 
-				<!-- Card 2 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Shaun Mclean</h2>
-						<span>• KHLJ3 •<br />ATC Training Director</span>
-						<a href="mailto:shaun.mclean@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">shaun.mclean@khaleejvacc.net</code>
-					</div>
+				<div class="form-control mt-4">
+					<label for="vatsimCid" class="label"><span class="label-text">VATSIM CID</span></label>
+					<input name="vatsimCid" type="number" placeholder="1514902" class="input input-bordered" required />
 				</div>
 
-				<!-- Card 3 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Vacant</h2>
-						<span>• KHLJ4 •<br />Events & Marketing Director</span>
-						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Deputy Directorate</div>
-
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
-				<!-- Card 1 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Vacant</h2>
-						<span>• KHLJ31 •<br />Deputy ATC Training Director</span>
-						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-					</div>
+				<div class="form-control mt-4">
+					<label for="email" class="label"><span class="label-text">Email</span></label>
+					<input name="email" type="email" placeholder="example@mail.com" class="input input-bordered" required />
 				</div>
 
-				<!-- Card 2 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Vacant</h2>
-						<span>• KHLJ41 •<br />Deputy Events & Marketing Director</span>
-						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Members</div>
-
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
-				<!-- Card 1 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Syed Moiz Uddin</h2>
-						<span>• KHLJ33 •<br />Operations Team Member</span>
-						<a href="mailto:moiz.uddin@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">moiz.uddin@khaleejvacc.net</code>
-					</div>
+				<div class="form-control mt-4">
+					<label for="message" class="label"><span class="label-text">Description</span></label>
+					<textarea name="message" placeholder="I would like to contact you regarding..." class="textarea textarea-bordered h-24" required
+					></textarea>
 				</div>
 
-				<!-- Card 2 -->
-				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
-					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
-
-					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Max Van Mullem</h2>
-						<span>• KHLJ42 •<br />Events & Marketing Member</span>
-						<a href="mailto:max.van.mullem@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">max.van.mullem@khaleejvacc.net</code>
-					</div>
+				<div class="form-control mt-6">
+					<button type="submit" class="btn btn-secondary">Submit</button>
 				</div>
-			</div>
+			</form>
 		</div>
 	</section>
 </main>
