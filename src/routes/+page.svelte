@@ -7,7 +7,7 @@
 		<div class="bg-black/50 h-full">
 			<div class="container flex flex-col justify-center h-full">
 				<h2 class="text-2xl md:text-4xl">👋 Welcome to</h2>
-				<h1 class="font-bold text-secondary text-5xl md:text-7xl">Khaleej vACC</h1>
+				<h1 class="font-bold text-secondary text-5xl md:text-7xl mt-1">Khaleej vACC</h1>
 				<p class="mt-2 max-w-lg">
 					Embark on an exhilarating journey through the virtual skies of Bahrain and Kuwait with Khaleej vACC. Join our vibrant community on
 					VATSIM and experience the thrill of realistic air traffic control and piloting.
@@ -50,7 +50,7 @@
 					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Logo" class="h-28 w-auto mt-6 md:mt-0 md:ml-4" />
 				</a>
 
-                <!-- NOTE: No external link provided -->
+				<!-- NOTE: No external link provided -->
 				<enhanced:img src="../lib/assets/images/partners/hawkskullz.png" alt="Logo" class="h-40 w-auto" />
 			</div>
 		</div>
