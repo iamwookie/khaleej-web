@@ -40,28 +40,48 @@
 
 			<form method="POST" use:enhance class="card card-body w-full">
 				<div class="form-control">
-					<label for="pilotName" class="label"><span class="label-text">Your Name</span></label>
+					<label for="pilotName" class="label">
+						<span class="label-text">Your Name</span>
+					</label>
+
 					<input name="pilotName" type="text" placeholder="Chesley Sullenberger" class="input input-bordered" required />
+
+					<div class="label">
+						<span class="label-text-alt italic">NOTE: The pilot's name will remain anonymous and is collected solely for staff to verify the occurrence.</span>
+					</div>
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="pilotCid" class="label"><span class="label-text">Your VATSIM CID</span></label>
-					<input name="pilotCid" type="number" placeholder="1234567" class="input input-bordered" required />
+					<label for="interactionDate" class="label">
+						<span class="label-text">Date of Interaction</span>
+					</label>
+
+					<input name="interactionDate" type="date" class="input input-bordered" required />
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="atcCallsign" class="label"><span class="label-text">ATC Callsign</span></label>
+					<label for="atcName" class="label">
+						<span class="label-text">Controller Name</span>
+					</label>
+
+					<input name="atcName" type="text" placeholder="John Doe" class="input input-bordered" required />
+				</div>
+
+				<div class="form-control mt-4">
+					<label for="atcCallsign" class="label">
+						<span class="label-text">Controller Callsign</span>
+					</label>
+
 					<input name="atcCallsign" type="text" placeholder="OBBI_TWR" class="input input-bordered" required />
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="date" class="label"><span class="label-text">Date of Interaction</span></label>
-					<input name="date" type="date" class="input input-bordered" required />
-				</div>
+					<label for="rating" class="label">
+						<span class="label-text">Rating</span>
+					</label>
 
-				<div class="form-control mt-4">
-					<label for="rating" class="label"><span class="label-text">Rating</span></label>
 					<input name="rating" type="range" min="0" max="100" value="50" step="25" class="range range-secondary" />
+
 					<div class="flex w-full justify-between px-2 text-xs mt-2">
 						<span>Poor</span>
 						<span>Below Average</span>
@@ -72,7 +92,10 @@
 				</div>
 
 				<div class="form-control mt-4">
-					<label for="feedback" class="label"><span class="label-text">Feedback</span></label>
+					<label for="feedback" class="label">
+						<span class="label-text">Feedback</span>
+					</label>
+
 					<textarea
 						name="feedback"
 						placeholder="I was flying today and noticed that the controller was..."
@@ -88,3 +111,12 @@
 		</div>
 	</section>
 </main>
+
+<style lang="postcss">
+	.alert {
+		grid-auto-flow: column;
+		grid-template-columns: auto minmax(auto, 1fr);
+		justify-items: start;
+		text-align: start;
+	}
+</style>
