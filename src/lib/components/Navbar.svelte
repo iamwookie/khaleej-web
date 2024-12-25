@@ -46,10 +46,9 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
-								<li><a href="/">Airports & Charts</a></li>
 								<li><a href="/events">Events</a></li>
 								<li><a href="/events/booking">Event Booking</a></li>
-								<li><a href="/atc/feedback">ATC Feedback</a></li>
+								<li><a href="/charts">Airports & Charts</a></li>
 							</ul>
 						</details>
 					</li>
@@ -64,6 +63,7 @@
 								<li><a href="/atc/training">Training</a></li>
 								<li><a href="/atc/roster">Roster</a></li>
 								<li><a href="/atc/docs">Documentation</a></li>
+								<li><a href="/atc/feedback">ATC Feedback</a></li>
 							</ul>
 						</details>
 					</li>

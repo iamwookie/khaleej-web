@@ -43,11 +43,11 @@
 			<!-- NOTE: Manual padding for now due to image aspect ratio mismatch -->
 			<div class="flex flex-col md:flex-row justify-center items-center w-full">
 				<a href="https://airlinkvirtual.com/" target="_blank" aria-label="Airlink Virtual" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../lib/assets/images/partners/airlink.png" alt="Logo" class="h-28 w-auto mr-4" />
+					<enhanced:img src="../lib/assets/images/partners/airlink.png" alt="Logo" class="h-28 w-auto md:mr-4" />
 				</a>
 
 				<a href="https://vatsim.net/" target="_blank" aria-label="VATSIM" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Logo" class="h-28 w-auto ml-4" />
+					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Logo" class="h-28 w-auto mt-6 md:mt-0 md:ml-4" />
 				</a>
 
                 <!-- NOTE: No external link provided -->
