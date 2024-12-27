@@ -20,14 +20,14 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col gap-10">
+		<div class="container flex flex-col gap-10 min-h-[40vh]">
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Directorate</div>
 
 			<!-- To add: badges for roles, import from data file -->
 			<div class="flex flex-col xl:flex-row justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
@@ -40,7 +40,7 @@
 
 				<!-- Card 2 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
@@ -53,13 +53,14 @@
 
 				<!-- Card 3 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ4 •<br />Events & Marketing Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
+                        <code class="bg-base-100 rounded text-sm px-1">shaun.mclean@khaleejvacc.net</code>
 					</div>
 				</div>
 			</div>
@@ -69,7 +70,7 @@
 			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
@@ -81,7 +82,7 @@
 
 				<!-- Card 2 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
@@ -97,7 +98,7 @@
 			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
@@ -110,7 +111,7 @@
 
 				<!-- Card 2 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
-					<!-- Optional Decorative Overlay -->
+					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">

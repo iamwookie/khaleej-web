@@ -25,7 +25,7 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col items-center">
+		<div class="container flex flex-col items-center min-h-[40vh]">
 			{#if form?.success}
 				<div role="alert" class="alert alert-success max-w-md">
 					<CircleCheck size={24} /><span>Your form has been submitted!</span>

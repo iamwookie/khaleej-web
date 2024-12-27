@@ -40,7 +40,7 @@
 		<div class="container flex flex-col gap-10">
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-4xl">Our Partners</div>
 
-			<!-- NOTE: Manual padding for now due to image aspect ratio mismatch -->
+			<!-- Manual padding for now due to image aspect ratio mismatch -->
 			<div class="flex flex-col md:flex-row justify-center items-center w-full">
 				<a href="https://airlinkvirtual.com/" target="_blank" aria-label="Airlink Virtual" class="hover:opacity-50 transition-opacity">
 					<enhanced:img src="../lib/assets/images/partners/airlink.png" alt="Logo" class="h-28 w-auto md:mr-4" />
@@ -50,7 +50,7 @@
 					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Logo" class="h-28 w-auto mt-6 md:mt-0 md:ml-4" />
 				</a>
 
-				<!-- NOTE: No external link provided -->
+				<!-- No external link provided -->
 				<enhanced:img src="../lib/assets/images/partners/hawkskullz.png" alt="Logo" class="h-40 w-auto" />
 			</div>
 		</div>
