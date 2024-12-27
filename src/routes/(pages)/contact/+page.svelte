@@ -73,7 +73,8 @@
 				</div>
 
 				<div class="form-control mt-6">
-					<button type="submit" class="btn btn-secondary">Submit</button>
+                    <!-- Disable forms for now -->
+					<button type="submit" class="btn btn-secondary btn-disabled">Submit</button>
 				</div>
 			</form>
 		</div>

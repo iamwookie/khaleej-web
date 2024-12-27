@@ -105,7 +105,8 @@
 				</div>
 
 				<div class="form-control mt-6">
-					<button type="submit" class="btn btn-secondary">Submit Feedback</button>
+                    <!-- Disable forms for now -->
+					<button type="submit" class="btn btn-secondary btn-disabled">Submit Feedback</button>
 				</div>
 			</form>
 		</div>
