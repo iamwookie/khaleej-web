@@ -60,7 +60,7 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50">
-								<li><a href="/new"><Star size={20} />New to VATSIM</a></li>
+								<li><a href="/new" target="_blank"><Star size={20} />New to VATSIM</a></li>
 								<li><a href="/join"><UserPlus size={20} />Join Khaleej</a></li>
 								<li><a href="/atc/training"><GraduationCap size={20} />ATC Training</a></li>
 							</ul>
@@ -90,7 +90,7 @@
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50 min-w-max">
 								<li><a href="/atc/feedback"><Rss size={20} />ATC Feedback</a></li>
 								<li><a href="/atc/roster"><UserRoundSearch size={20} />ATC Roster</a></li>
-								<li><a href="/atc/docs"><BookText size={20} />Documentation</a></li>
+								<li><a href="https://docs.khaleejvacc.net/" target="_blank"><BookText size={20} />Documentation</a></li>
 							</ul>
 						</details>
 					</li>
@@ -105,7 +105,7 @@
 								<li><a href="/staff"><UsersRound size={20} />Staff</a></li>
 								<li><a href="/policies"><HeartHandshake size={20} />Policies</a></li>
 								<li><a href="/contact"><Mails size={20} />Contact</a></li>
-								<li><a href="/"><Headset size={20} />HQ</a></li>
+								<li><a href="https://hayya.vatsim.me/" target="_blank"><Headset size={20} />HQ</a></li>
 							</ul>
 						</details>
 					</li>
@@ -128,10 +128,28 @@
 
 	<div class="drawer-side">
 		<label for="mobile-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+
 		<ul class="menu bg-base-200 min-h-full w-80 p-4">
-			<!-- Sidebar content here -->
-			<li><a>Sidebar Item 1</a></li>
-			<li><a>Sidebar Item 2</a></li>
+			<li class="menu-title">Getting Started</li>
+			<li><a href="/new" target="_blank"><Star size={20} />New to VATSIM</a></li>
+			<li><a href="/join"><UserPlus size={20} />Join Khaleej</a></li>
+			<li><a href="/atc/training"><GraduationCap size={20} />ATC Training</a></li>
+
+			<li class="menu-title">Pilots</li>
+			<li><a href="/events"><CalendarHeart size={20} />Events</a></li>
+			<li><a href="/events/booking"><CalendarPlus size={20} />Event Booking</a></li>
+			<li><a href="/charts"><Map size={20} />Airports & Charts</a></li>
+
+			<li class="menu-title">Controllers</li>
+			<li><a href="/atc/feedback"><Rss size={20} />ATC Feedback</a></li>
+			<li><a href="/atc/roster"><UserRoundSearch size={20} />ATC Roster</a></li>
+			<li><a href="https://docs.khaleejvacc.net/" target="_blank"><BookText size={20} />Documentation</a></li>
+
+			<li class="menu-title">About</li>
+			<li><a href="/staff"><UsersRound size={20} />Staff</a></li>
+			<li><a href="/policies"><HeartHandshake size={20} />Policies</a></li>
+			<li><a href="/contact"><Mails size={20} />Contact</a></li>
+			<li><a href="https://hayya.vatsim.me/" target="_blank"><Headset size={20} />HQ</a></li>
 		</ul>
 	</div>
 </div>
