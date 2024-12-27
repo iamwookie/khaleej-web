@@ -22,7 +22,7 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col items-center">
+		<div class="container flex flex-col items-center min-h-[40vh]">
 			<div class="hero">
 				<div class="hero-content flex-col lg:flex-row gap-8">
 					<enhanced:img src="../../../lib/assets/images/bg.png" alt="Join Image" class="max-w-md rounded-lg shadow-2xl" />

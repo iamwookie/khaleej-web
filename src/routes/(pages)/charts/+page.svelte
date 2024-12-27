@@ -20,6 +20,6 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col justify-center items-center h-[40vh]">There are currently no available charts.</div>
+		<div class="container flex flex-col justify-center items-center min-h-[40vh]">There are currently no available charts.</div>
 	</section>
 </main>
