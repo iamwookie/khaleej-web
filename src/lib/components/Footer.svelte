@@ -6,16 +6,16 @@
 	<div class="container">
 		<div class="divider m-0"></div>
 
-		<div class="footer p-10">
-			<aside class="grid-flow-col items-center gap-4 place-self-center md:place-self-start">
+		<div class="footer footer-center p-10">
+			<aside>
 				<a href="/" aria-label="Home" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../assets/images/logo_khaleej.png" alt="Logo" class="h-24 w-24" />
+					<enhanced:img src="../assets/images/logo_footer.png" alt="Footer Logo" class="h-24 w-auto" />
 				</a>
+
+				<p>Khaleej vACC • Copyright © 2024 - All Rights Reserved</p>
 			</aside>
 
-			<p class="justify-self-center place-self-center text-center">Khaleej vACC • Copyright © 2024 - All Rights Reserved</p>
-
-			<nav class="grid-flow-col gap-4 place-self-center md:justify-self-end">
+			<nav class="grid-flow-col gap-4">
 				<a href="/" aria-label="Discord" class="hover:opacity-50 transition-opacity">
 					<Discord class="fill-current h-6 w-6" />
 				</a>
