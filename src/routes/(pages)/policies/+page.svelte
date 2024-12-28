@@ -80,7 +80,7 @@
 
 				<!-- Content -->
 				<div class="relative flex flex-col md:flex-row gap-4 justify-between w-full">
-					<h2 class="card-title text-2xl font-bold"><BookText size={24} /> Controlling Software Installation Guide.pdf</h2>
+					<h2 class="card-title text-2xl font-bold"><BookText size={24} /> Controlling Software Installation Guide</h2>
 
 					<!-- prettier-ignore -->
 					<a
