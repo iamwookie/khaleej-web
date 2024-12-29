@@ -25,7 +25,7 @@
 		<div class="container flex flex-col items-center min-h-[40vh]">
 			<div class="hero">
 				<div class="hero-content flex-col lg:flex-row gap-8">
-					<enhanced:img src="../../../lib/assets/images/bg.png" alt="Join Image" class="max-w-md rounded-lg shadow-2xl" />
+					<enhanced:img src="../../../lib/assets/images/bg.png" alt="Join Image" class="max-w-xs sm:max-w-md rounded-lg shadow-2xl" />
 
 					<div class="flex flex-col gap-6">
 						<p class="max-w-md">
