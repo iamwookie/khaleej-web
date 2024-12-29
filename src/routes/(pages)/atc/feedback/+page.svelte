@@ -1,12 +1,14 @@
 <script lang="ts">
-	import type { ActionData } from './$types';
+	import { superForm } from 'sveltekit-superforms';
+	import { cn } from '$lib/utils';
 
-	import { enhance } from '$app/forms';
 	import { Rss, CircleCheck, CircleX } from 'lucide-svelte';
 
 	import bgImage from '$lib/assets/images/bg.png';
 
-	let { form } = $props<{ form: ActionData | null }>();
+	let { data } = $props();
+
+	const { form, errors, constraints, message, delayed, enhance } = superForm(data.form);
 </script>
 
 <main class="flex flex-col">
@@ -26,29 +28,32 @@
 
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col items-center">
-			{#if form?.success}
-				<div role="alert" class="alert alert-success max-w-md">
-					<CircleCheck size={24} /><span>Your feedback has been submitted!</span>
-				</div>
-			{/if}
-
-			{#if form?.fail}
-				<div role="alert" class="alert alert-error max-w-md">
-					<CircleX size={24} /><span>Uh oh! Something went wrong!</span>
-				</div>
-			{/if}
-
-			<form method="POST" use:enhance class="card card-body w-full">
+			<form method="POST" class="card card-body w-full" use:enhance>
 				<div class="form-control">
 					<label for="pilotName" class="label">
 						<span class="label-text">Your Name</span>
 					</label>
 
-					<input name="pilotName" type="text" placeholder="Chesley Sullenberger" class="input input-bordered" required />
+					<input
+						type="text"
+						name="pilotName"
+						placeholder="Chesley Sullenberger"
+						class={cn('input input-bordered', { 'input-error': $errors.pilotName })}
+						bind:value={$form.pilotName}
+						{...$constraints.pilotName}
+					/>
 
 					<div class="label">
-						<span class="label-text-alt italic">NOTE: The pilot's name will remain anonymous and is collected solely for staff to verify the occurrence.</span>
+						<span class="label-text-alt italic"
+							>NOTE: The pilot's name will remain anonymous and is collected solely for staff to verify the occurrence.</span
+						>
 					</div>
+
+					{#if $errors.pilotName}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.pilotName}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-4">
@@ -56,7 +61,19 @@
 						<span class="label-text">Date of Interaction</span>
 					</label>
 
-					<input name="interactionDate" type="date" class="input input-bordered" required />
+					<input
+						type="date"
+						name="interactionDate"
+						class={cn('input input-bordered', { 'input-error': $errors.interactionDate })}
+						bind:value={$form.interactionDate}
+						{...$constraints.interactionDate}
+					/>
+
+					{#if $errors.interactionDate}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.interactionDate}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-4">
@@ -64,7 +81,20 @@
 						<span class="label-text">Controller Name</span>
 					</label>
 
-					<input name="atcName" type="text" placeholder="John Doe" class="input input-bordered" required />
+					<input
+						type="text"
+						name="atcName"
+						placeholder="John Doe"
+						class={cn('input input-bordered', { 'input-error': $errors.atcName })}
+						bind:value={$form.atcName}
+						{...$constraints.atcName}
+					/>
+
+					{#if $errors.atcName}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.atcName}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-4">
@@ -72,7 +102,20 @@
 						<span class="label-text">Controller Callsign</span>
 					</label>
 
-					<input name="atcCallsign" type="text" placeholder="OBBI_TWR" class="input input-bordered" required />
+					<input
+						type="text"
+						name="atcCallsign"
+						placeholder="OBBI_TWR"
+						class={cn('input input-bordered', { 'input-error': $errors.atcCallsign })}
+						bind:value={$form.atcCallsign}
+						{...$constraints.atcCallsign}
+					/>
+
+					{#if $errors.atcCallsign}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.atcCallsign}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-4">
@@ -80,7 +123,16 @@
 						<span class="label-text">Rating</span>
 					</label>
 
-					<input name="rating" type="range" min="0" max="100" value="50" step="25" class="range range-secondary" />
+					<input
+						type="range"
+						name="rating"
+						min="0"
+						max="100"
+						step="25"
+						class="range range-secondary"
+						bind:value={$form.rating}
+						{...$constraints.rating}
+					/>
 
 					<div class="flex w-full justify-between px-2 text-xs mt-2">
 						<span>Poor</span>
@@ -89,6 +141,12 @@
 						<span>Good</span>
 						<span>Excellent</span>
 					</div>
+
+					{#if $errors.rating}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.rating}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-4">
@@ -99,16 +157,40 @@
 					<textarea
 						name="feedback"
 						placeholder="I was flying today and noticed that the controller was..."
-						class="textarea textarea-bordered h-24"
-						required
+						class={cn('textarea textarea-bordered h-24', { 'input-error': $errors.feedback })}
+						bind:value={$form.feedback}
+						{...$constraints.feedback}
 					></textarea>
+
+					{#if $errors.feedback}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.feedback}</span>
+						</div>
+					{/if}
 				</div>
 
 				<div class="form-control mt-6">
-                    <!-- Disable forms for now -->
-					<button type="submit" class="btn btn-secondary btn-disabled">Submit Feedback</button>
+					<button type="submit" class={cn('btn btn-secondary', { 'btn-disabled': $delayed })}>
+						{#if $delayed}
+							<span class="loading loading-spinner"></span>
+						{:else}
+							Submit
+						{/if}
+					</button>
 				</div>
 			</form>
+
+			{#if $message}
+				{#if $message.status == 'success'}
+					<div role="alert" class="alert alert-success max-w-md">
+						<CircleCheck size={24} /><span>{$message.text}</span>
+					</div>
+				{:else if $message.status == 'error'}
+					<div role="alert" class="alert alert-error max-w-md">
+						<CircleX size={24} /><span>{$message.text}</span>
+					</div>
+				{/if}
+			{/if}
 		</div>
 	</section>
 </main>
