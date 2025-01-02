@@ -21,106 +21,209 @@
 
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col items-center min-h-[40vh]">
-			<div class="overflow-x-auto w-full">
-				<table class="table">
-					<thead>
-						<tr>
-							<th class="w-0">CID</th>
-							<th class="w-1/5">Name</th>
-							<th class="w-0">Rating</th>
-							<th>Title</th>
-							<th>DEL</th>
-							<th>GND</th>
-							<th>TWR</th>
-							<th>APP</th>
-							<th>CTR</th>
-						</tr>
-					</thead>
+			<div role="tablist" class="tabs tabs-bordered w-full">
+				<input type="radio" name="atc_roster_tabs" role="tab" class="tab" aria-label="Residents" checked />
+				<div role="tabpanel" class="tab-content p-5">
+					<div class="overflow-x-auto">
+						<table class="table">
+							<thead>
+								<tr>
+									<th class="w-0">CID</th>
+									<th class="w-1/5">Name</th>
+									<th class="w-0">Rating</th>
+									<th>Title</th>
+									<th>DEL</th>
+									<th>GND</th>
+									<th>TWR</th>
+									<th>APP</th>
+									<th>CTR</th>
+								</tr>
+							</thead>
 
-					<tbody>
-						<tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-                            <td><Check class="text-success" /></td>
-						</tr>
-                        <tr>
-							<td>1514902</td>
-							<td>Bilal Baig</td>
-							<td>S1</td>
-							<td>Tower Controller</td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-                            <td><X class="text-error" /></td>
-						</tr>
-					</tbody>
-				</table>
+							<tbody>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<input type="radio" name="atc_roster_tabs" role="tab" class="tab" aria-label="Visitors" />
+				<div role="tabpanel" class="tab-content p-5">
+					<div class="overflow-x-auto">
+						<table class="table">
+							<thead>
+								<tr>
+									<th class="w-0">CID</th>
+									<th class="w-1/5">Name</th>
+									<th class="w-0">Rating</th>
+									<th>Title</th>
+									<th>DEL</th>
+									<th>GND</th>
+									<th>TWR</th>
+									<th>APP</th>
+									<th>CTR</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+									<td><Check class="text-success" /></td>
+								</tr>
+								<tr>
+									<td>1514902</td>
+									<td>Bilal Baig</td>
+									<td>S1</td>
+									<td>Tower Controller</td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+									<td><X class="text-error" /></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 </main>
-
-<style lang="postcss">
-</style>
