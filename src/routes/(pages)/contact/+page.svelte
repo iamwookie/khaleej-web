@@ -36,7 +36,7 @@
 					<input
 						type="text"
 						name="name"
-						placeholder="Sully Sullenberger"
+						placeholder="Chesley Sullenberger"
 						class={cn('input input-bordered', { 'input-error': $errors.name })}
 						bind:value={$form.name}
 						{...$constraints.name}
