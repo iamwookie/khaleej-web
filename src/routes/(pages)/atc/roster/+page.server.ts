@@ -11,8 +11,8 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 
 	try {
 		const [resResponse, visResponse] = await Promise.all([
-			fetch(new URL('/atc/roster/resident.json', cdn)),
-			fetch(new URL('/atc/roster/visitor.json', cdn))
+			fetch(new URL('/atc/roster/residents.json', cdn)),
+			fetch(new URL('/atc/roster/visitors.json', cdn))
 		]);
 
 		if (!resResponse.ok) throw new Error(`[${url.pathname}] Error Fetching Residents: ${resResponse.status}: ${resResponse.statusText}`);
@@ -21,7 +21,7 @@ export const load: PageServerLoad = async ({ fetch, url }) => {
 		residents = await resResponse.json();
 		visitors = await visResponse.json();
 	} catch (err) {
-        // We only log the error as the data is sent as null to the client
+		// We only log the error as the data is sent as null to the client
 		console.error(err);
 	}
 
