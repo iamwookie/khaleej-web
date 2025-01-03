@@ -9,13 +9,13 @@
 	<div class="container">
 		<div class="divider m-0"></div>
 
-		<div class="footer footer-center p-10">
+		<div class="footer footer-center gap-8 py-10">
 			<aside>
 				<a href="/" aria-label="Home" class="hover:opacity-50 transition-opacity">
 					<enhanced:img src="../assets/images/logo_footer.png" alt="Footer Logo" class="h-24 w-auto" />
 				</a>
 
-				<p>Khaleej vACC • Copyright © 2024 - All Rights Reserved</p>
+				<p class="text-neutral-content">© 2024 KHALEEJ VACC • ALL RIGHTS RESERVED</p>
 			</aside>
 
 			<nav class="grid-flow-col gap-4">
