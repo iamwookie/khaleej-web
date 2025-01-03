@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { fade } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 	import { X } from 'lucide-svelte';
 
 	let visible = $state(false);
 
-    // Show the toast for 1 second, then hide it after 10 seconds
+	// Show the toast for 1 second, then hide it after 10 seconds
 	setTimeout(() => (visible = true), 1000);
 	setTimeout(() => (visible = false), 10000);
 </script>
