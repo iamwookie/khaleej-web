@@ -60,7 +60,7 @@
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ4 •<br />Events & Marketing Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-                        <code class="bg-base-100 rounded text-sm px-1">shaun.mclean@khaleejvacc.net</code>
+						<code class="bg-base-100 rounded text-sm px-1">shaun.mclean@khaleejvacc.net</code>
 					</div>
 				</div>
 			</div>

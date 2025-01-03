@@ -33,7 +33,7 @@
 							a veteran controller, the skies of Bahrain and Kuwait are open for you.
 						</p>
 
-                        <!-- Disabled for now due to Discord integration -->
+						<!-- Disabled for now due to Discord integration -->
 						<button class="btn btn-disabled">Get Started</button>
 					</div>
 				</div>

@@ -1,7 +1,11 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import { UserRoundSearch, Check, X } from 'lucide-svelte';
 
 	import bgImage from '$lib/assets/images/bg.png';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <main class="flex flex-col">
@@ -41,83 +45,54 @@
 							</thead>
 
 							<tbody>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
+								{#each data.residents as resident}
+									<tr>
+										<td>{resident.cid}</td>
+										<td>{resident.name}</td>
+										<td>{resident.rating}</td>
+										<td>{resident.title}</td>
+
+										<td>
+											{#if resident.positions.DEL}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if resident.positions.GND}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if resident.positions.TWR}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if resident.positions.APP}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if resident.positions.CTR}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+									</tr>
+								{/each}
 							</tbody>
 						</table>
 					</div>
@@ -142,83 +117,54 @@
 							</thead>
 
 							<tbody>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-									<td><Check class="text-success" /></td>
-								</tr>
-								<tr>
-									<td>1514902</td>
-									<td>Bilal Baig</td>
-									<td>S1</td>
-									<td>Tower Controller</td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-									<td><X class="text-error" /></td>
-								</tr>
+								{#each data.visitors as visitor}
+									<tr>
+										<td>{visitor.cid}</td>
+										<td>{visitor.name}</td>
+										<td>{visitor.rating}</td>
+										<td>{visitor.title}</td>
+
+										<td>
+											{#if visitor.positions.DEL}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if visitor.positions.GND}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if visitor.positions.TWR}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if visitor.positions.APP}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+
+										<td>
+											{#if visitor.positions.CTR}
+												<Check class="text-success" />
+											{:else}
+												<X class="text-error" />
+											{/if}
+										</td>
+									</tr>
+								{/each}
 							</tbody>
 						</table>
 					</div>
