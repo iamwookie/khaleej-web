@@ -16,6 +16,7 @@
 		Radar,
 		Rss,
 		UserRoundSearch,
+		// UserRoundCheck,
 		BookText,
 
 		// About
@@ -55,7 +56,7 @@
 				<ul class="menu menu-horizontal gap-1 px-1">
 					<li>
 						<details>
-							<summary>
+							<summary class="hover:bg-secondary hover:bg-opacity-50">
 								<Rocket size={20} /> Getting Started
 							</summary>
 
@@ -69,7 +70,7 @@
 
 					<li>
 						<details>
-							<summary>
+							<summary class="hover:bg-secondary hover:bg-opacity-50">
 								<Plane size={20} /> Pilots
 							</summary>
 
@@ -157,10 +158,8 @@
 <style lang="postcss">
 	@media (hover: hover) {
 		@supports (color: oklch(0% 0 0)) {
-			:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover,
-			:where(.menu li:not(.menu-title, .disabled) > details > summary:not(.menu-title)):not(.active, .btn):hover {
+			:where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover {
 				@apply bg-secondary;
-				@apply bg-opacity-50;
 			}
 		}
 	}
