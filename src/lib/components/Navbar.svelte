@@ -48,7 +48,7 @@
 		<div class="navbar bg-transparent px-8">
 			<div class="navbar-start">
 				<a href="/" aria-label="Home" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../assets/images/logo_khaleej.png" alt="Logo" class="h-32 w-32" />
+					<enhanced:img src="../assets/images/logo_khaleej.png" alt="Logo" class="w-32 h-32" />
 				</a>
 			</div>
 
@@ -61,7 +61,7 @@
 							</summary>
 
 							<ul class="menu menu-vertical bg-secondary bg-opacity-50">
-								<li><a href="/new" target="_blank"><Star size={20} />New to VATSIM</a></li>
+								<li><a href="/new"><Star size={20} />New to VATSIM</a></li>
 								<li><a href="/join"><UserPlus size={20} />Join Khaleej</a></li>
 								<li><a href="/atc/training"><GraduationCap size={20} />ATC Training</a></li>
 							</ul>
@@ -130,9 +130,9 @@
 	<div class="drawer-side">
 		<label for="mobile-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
 
-		<ul class="menu bg-base-200 min-h-full w-80 p-4">
+		<ul class="menu bg-base-200 w-80 min-h-full p-4">
 			<li class="menu-title">Getting Started</li>
-			<li><a href="/new" target="_blank"><Star size={20} />New to VATSIM</a></li>
+			<li><a href="/new"><Star size={20} />New to VATSIM</a></li>
 			<li><a href="/join"><UserPlus size={20} />Join Khaleej</a></li>
 			<li><a href="/atc/training"><GraduationCap size={20} />ATC Training</a></li>
 
