@@ -16,11 +16,11 @@
 				<X size={20} />
 			</button>
 
-			<span
-				>Looking to give ATC feedback? Click <a href="/atc/feedback" class="btn-link text-secondary hover:opacity-50 transition-opacity"
+			<span>
+				Looking to give ATC feedback? Click <a href="/atc/feedback" class="btn-link text-secondary hover:opacity-50 transition-opacity"
 					>here</a
-				>.</span
-			>
+				>.
+			</span>
 		</div>
 	</div>
 {/if}

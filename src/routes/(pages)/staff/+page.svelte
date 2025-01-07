@@ -24,7 +24,7 @@
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Directorate</div>
 
 			<!-- To add: badges for roles, import from data file -->
-			<div class="flex flex-col xl:flex-row justify-center items-center gap-8">
+			<div class="flex flex-row flex-wrap col justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
 					<!-- Decorative Overlay -->
@@ -57,17 +57,30 @@
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Vacant</h2>
+						<h2 class="card-title text-2xl font-bold">Max Van Mullem</h2>
 						<span>• KHLJ4 •<br />Events & Marketing Director</span>
-						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-						<code class="bg-base-100 rounded text-sm px-1">events@khaleejvacc.net</code>
+						<a href="mailto:max.van.mullem@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
+						<code class="bg-base-100 rounded text-sm px-1">max.van.mullem@khaleejvacc.net</code>
+					</div>
+				</div>
+
+				<!-- Card 4 -->
+				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
+					<!-- Decorative Overlay -->
+					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
+
+					<div class="relative card-body items-center text-center text-white">
+						<h2 class="card-title text-2xl font-bold">Syed Moiz Uddin</h2>
+						<span>• KHLJ32 •<br />vACC Operations Director</span>
+						<a href="mailto:moiz.uddin@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
+						<code class="bg-base-100 rounded text-sm px-1">moiz.uddin@khaleejvacc.net</code>
 					</div>
 				</div>
 			</div>
 
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Deputy Directorate</div>
 
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+			<div class="flex flex-row flex-wrap justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
 					<!-- Decorative Overlay -->
@@ -77,7 +90,7 @@
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ31 •<br />Deputy ATC Training Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-                        <code class="bg-base-100 rounded text-sm px-1">atc@khaleejvacc.net</code>
+						<code class="bg-base-100 rounded text-sm px-1">atc@khaleejvacc.net</code>
 					</div>
 				</div>
 
@@ -90,24 +103,24 @@
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ41 •<br />Deputy Events & Marketing Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
-                        <code class="bg-base-100 rounded text-sm px-1">events@khaleejvacc.net</code>
+						<code class="bg-base-100 rounded text-sm px-1">events@khaleejvacc.net</code>
 					</div>
 				</div>
 			</div>
 
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-3xl font-bold">Members</div>
 
-			<div class="flex flex-col md:flex-row justify-center items-center gap-8">
+			<div class="flex flex-row flex-wrap justify-center items-center gap-8">
 				<!-- Card 1 -->
 				<div class="relative card bg-opacity-80 w-96 rounded-xl shadow-xl p-6">
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Syed Moiz Uddin</h2>
+						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ33 •<br />Operations Team Member</span>
-						<a href="mailto:moiz.uddin@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">moiz.uddin@khaleejvacc.net</code>
+						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
+						<code class="bg-base-100 rounded text-sm px-1">operations@khaleejvacc.net</code>
 					</div>
 				</div>
 
@@ -117,10 +130,10 @@
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
 					<div class="relative card-body items-center text-center text-white">
-						<h2 class="card-title text-2xl font-bold">Max Van Mullem</h2>
+						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ42 •<br />Events & Marketing Member</span>
-						<a href="mailto:max.van.mullem@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
-						<code class="bg-base-100 rounded text-sm px-1">max.van.mullem@khaleejvacc.net</code>
+						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
+						<code class="bg-base-100 rounded text-sm px-1">events@khaleejvacc.net</code>
 					</div>
 				</div>
 			</div>
