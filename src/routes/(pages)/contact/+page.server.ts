@@ -53,7 +53,7 @@ export const actions: Actions = {
 		                <p style="color: #555">${form.data.message}</p>
 
 		                <div style="margin-top: 20px; font-size: 12px; color: #aaa">
-		                    <p>Submitted on ${time.toLocaleString()}</p>
+		                    <p>Submitted on ${time.toLocaleString()} | IP: ${event.getClientAddress()}</p>
 		                </div>
 		            </div>
 		        </body>

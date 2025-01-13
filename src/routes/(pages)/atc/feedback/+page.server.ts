@@ -30,7 +30,6 @@ export const actions: Actions = {
 		const form = await superValidate(event.request, zod(feedbackFormSchema));
 
 		if (!form.valid) return fail(400, { form });
-
 		if (await limiter.isLimited(event)) return message(form, { status: 'error', text: 'Too many requests! Try again after a few minutes.' });
 
 		try {
@@ -57,7 +56,7 @@ export const actions: Actions = {
 		                <p style="color: #555">${form.data.feedback}</p>
 
 		                <div style="margin-top: 20px; font-size: 12px; color: #aaa">
-		                    <p>Submitted on ${time.toLocaleString()}</p>
+		                    <p>Submitted on ${time.toLocaleString()} | IP: ${event.getClientAddress()}</p>
 		                </div>
 		            </div>
 		        </body>
