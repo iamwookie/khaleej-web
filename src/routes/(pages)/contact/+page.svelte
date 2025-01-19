@@ -3,6 +3,7 @@
 	import { cn } from '$lib/utils';
 
 	import { Mails, CircleCheck, CircleX } from 'lucide-svelte';
+
 	import bgImage from '$lib/assets/images/bg.png';
 
 	let { data } = $props();

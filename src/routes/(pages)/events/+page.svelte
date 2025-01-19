@@ -1,7 +1,13 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import { CalendarHeart } from 'lucide-svelte';
 
+	import Events from '$lib/components/Events.svelte';
+
 	import bgImage from '$lib/assets/images/bg.png';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <main class="flex flex-col">
@@ -20,6 +26,12 @@
 	</section>
 
 	<section class="bg-base-300 py-10">
-		<div class="container flex flex-col justify-center items-center min-h-[40vh]">There are currently no upcoming events.</div>
+		<div class="container flex flex-col justify-center items-center min-h-[40vh]">
+			{#if data.events}
+				<Events events={data.events} />
+			{:else}
+				There are currently no upcoming events.
+			{/if}
+		</div>
 	</section>
 </main>

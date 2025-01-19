@@ -30,7 +30,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Rashid Raikhy</h2>
 						<span>• KHLJ1 •<br />Director</span>
 						<a href="mailto:rashid.raikhy@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
@@ -43,7 +43,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Shaun Mclean</h2>
 						<span>• KHLJ3 •<br />ATC Training Director</span>
 						<a href="mailto:shaun.mclean@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
@@ -56,7 +56,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Max Van Mullem</h2>
 						<span>• KHLJ4 •<br />Events & Marketing Director</span>
 						<a href="mailto:max.van.mullem@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
@@ -69,7 +69,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Syed Moiz Uddin</h2>
 						<span>• KHLJ32 •<br />vACC Operations Director</span>
 						<a href="mailto:moiz.uddin@khaleejvacc.net" class="btn btn-secondary w-full shadow-lg mt-4">Contact</a>
@@ -86,7 +86,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ31 •<br />Deputy ATC Training Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
@@ -99,7 +99,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ41 •<br />Deputy Events & Marketing Director</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
@@ -116,7 +116,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ33 •<br />Operations Team Member</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
@@ -129,7 +129,7 @@
 					<!-- Decorative Overlay -->
 					<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-xl"></div>
 
-					<div class="relative card-body items-center text-center text-white">
+					<div class="relative card-body items-center text-center">
 						<h2 class="card-title text-2xl font-bold">Vacant</h2>
 						<span>• KHLJ42 •<br />Events & Marketing Member</span>
 						<button class="btn btn-secondary btn-disabled w-full shadow-lg mt-4">Contact</button>
