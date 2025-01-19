@@ -1,5 +1,11 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
+	import Events from '$lib/components/Events.svelte';
+
 	import bgImage from '$lib/assets/images/bg.png';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <main class="flex flex-col">
@@ -23,9 +29,12 @@
 	<section class="bg-base-300 py-10">
 		<div class="container flex flex-col gap-10">
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-4xl">Upcoming Events</div>
-			<div class="flex flex-col text-center">
+
+			{#if data.events}
+				<Events events={data.events} />
+			{:else}
 				<p>There are currently no upcoming events.</p>
-			</div>
+			{/if}
 		</div>
 	</section>
 
@@ -36,7 +45,7 @@
 		</div>
 	</section> -->
 
-	<section class="bg-base-300 py-10">
+	<section class="bg-base-300 pb-10">
 		<div class="container flex flex-col gap-10">
 			<div class="divider divider-secondary before:bg-opacity-50 after:bg-opacity-50 text-4xl">Our Partners</div>
 
