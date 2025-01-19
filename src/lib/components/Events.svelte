@@ -8,33 +8,37 @@
 
 <div class="flex flex-col items-center gap-10 w-full">
 	{#each events as event}
-		<div class="card card-side w-[1080px] bg-base-100 shadow-xl">
+		<div class="card 2xl:card-side w-[70%] bg-base-100 shadow-xl">
 			<figure class="w-full">
 				<img src={event.banner} alt="Event Banner" class="w-full h-auto object-contain" />
 			</figure>
 
-			<div class="relative card-body justify-between bg-opacity-80 rounded-xl shadow-xl">
+			<div class="relative card-body justify-between gap-10 bg-opacity-80 rounded-xl shadow-xl">
 				<!-- Decorative Overlay -->
-				<div class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-e-xl"></div>
+				<div
+					class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-b-xl 2xl:rounded-b-none 2xl:rounded-r-xl"
+				></div>
 
-				<div class="relative">
-					<h2 class="card-title">{event.name}<span class="badge badge-neutral text-xs">{event.type}</span></h2>
-					<p>{event.short_description}</p>
+				<div class="relative flex flex-col gap-1">
+					<h2 class="card-title text-base lg:text-xl">{event.name}<span class="badge badge-neutral text-xs">{event.type}</span></h2>
+					<p class="text-sm sm:text-base">{event.short_description}</p>
 				</div>
 
-				<div class="relative card-actions justify-end items-center">
-					<CalendarCheck2 size={20} />
+				<div class="relative card-actions justify-between items-center">
+					<div class="flex items-center gap-1">
+						<CalendarCheck2 size={20} />
 
-					<p class="font-bold">
-						{new Date(event.start_time)
-							.toLocaleDateString('en-GB', {
-								weekday: 'long',
-								year: 'numeric',
-								month: 'long',
-								day: 'numeric'
-							})
-							.replace(/(\w+) (\d+) (\w+) (\d+)/, '$1, $2 $3, $4')}
-					</p>
+						<p class="font-bold text-sm sm:text-base">
+							{new Date(event.start_time)
+								.toLocaleDateString('en-GB', {
+									weekday: 'long',
+									year: 'numeric',
+									month: 'long',
+									day: 'numeric'
+								})
+								.replace(/(\w+) (\d+) (\w+) (\d+)/, '$1, $2 $3, $4')}
+						</p>
+					</div>
 
 					<a href={event.link} target="_blank" class="btn btn-secondary">View Info</a>
 				</div>
