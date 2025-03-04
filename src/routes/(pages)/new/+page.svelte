@@ -38,7 +38,7 @@
 						<button class="btn btn-disabled">Get Started</button>
 					</div>
 
-					<enhanced:img src="../../../lib/assets/images/partners/vatsim.png" class="w-96 h-auto shadow-2xl" />
+					<enhanced:img src="../../../lib/assets/images/partners/vatsim.png" alt="VATSIM Image" class="w-96 h-auto shadow-2xl" />
 				</div>
 			</div>
 			<div class="hero">
@@ -56,7 +56,7 @@
 						<button class="btn btn-disabled">Get Started</button>
 					</div>
 
-					<enhanced:img src="../../../lib/assets/images/bg.png" class="w-96 h-auto rounded-lg shadow-2xl" />
+					<enhanced:img src="../../../lib/assets/images/bg.png" alt="Region Image" class="w-96 h-auto rounded-lg shadow-2xl" />
 				</div>
 			</div>
 		</div>

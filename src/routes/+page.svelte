@@ -52,15 +52,15 @@
 			<!-- Manual padding for now due to image aspect ratio mismatch -->
 			<div class="flex flex-col md:flex-row justify-center items-center w-full">
 				<a href="https://airlinkvirtual.com/" target="_blank" aria-label="Airlink Virtual" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../lib/assets/images/partners/airlink.png" alt="Logo" class="w-auto h-28 md:mr-4" />
+					<enhanced:img src="../lib/assets/images/partners/airlink.png" alt="Partner Logo" class="w-auto h-28 md:mr-4" />
 				</a>
 
 				<a href="https://vatsim.net/" target="_blank" aria-label="VATSIM" class="hover:opacity-50 transition-opacity">
-					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Logo" class="w-auto h-28 mt-6 md:mt-0 md:ml-4" />
+					<enhanced:img src="../lib/assets/images/partners/vatsim.png" alt="Partner Logo" class="w-auto h-28 mt-6 md:mt-0 md:ml-4" />
 				</a>
 
 				<!-- No external link provided -->
-				<enhanced:img src="../lib/assets/images/partners/hawkskullz.png" alt="Logo" class="w-auto h-40" />
+				<enhanced:img src="../lib/assets/images/partners/hawkskullz.png" alt="Partner Logo" class="w-auto h-40" />
 			</div>
 		</div>
 	</section>

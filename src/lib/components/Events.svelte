@@ -8,12 +8,12 @@
 
 <div class="flex flex-col items-center gap-10 w-full">
 	{#each events as event}
-		<div class="card 2xl:card-side w-[70%] bg-base-100 shadow-xl">
-			<figure class="w-full">
-				<img src={event.banner} alt="Event Banner" class="w-full h-auto object-contain" />
+		<div class="card 2xl:card-side w-[80vw] 2xl:w-[60vw] bg-base-100 shadow-xl">
+			<figure class="w-full 2xl:w-2/5 h-auto">
+				<img src={event.banner} alt="Event Banner" class="w-full h-full object-fill" />
 			</figure>
 
-			<div class="relative card-body justify-between gap-10 bg-opacity-80 rounded-xl shadow-xl">
+			<div class="relative card-body justify-between gap-10 bg-opacity-80 rounded-xl shadow-xl w-full 2xl:w-3/5">
 				<!-- Decorative Overlay -->
 				<div
 					class="absolute inset-0 bg-gradient-to-br from-white to-secondary shadow-inner opacity-50 rounded-b-xl 2xl:rounded-b-none 2xl:rounded-r-xl"
