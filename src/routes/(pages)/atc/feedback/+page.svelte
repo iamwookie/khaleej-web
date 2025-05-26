@@ -56,6 +56,27 @@
 					{/if}
 				</div>
 
+                <div class="form-control mt-4">
+					<label for="pilotCallsign" class="label">
+						<span class="label-text">Your Callsign</span>
+					</label>
+
+					<input
+						type="text"
+						name="pilotCallsign"
+                        placeholder="GFA211"
+						class={cn('input input-bordered', { 'input-error': $errors.pilotCallsign })}
+						bind:value={$form.pilotCallsign}
+						{...$constraints.pilotCallsign}
+					/>
+
+					{#if $errors.pilotCallsign}
+						<div class="label">
+							<span class="label-text-alt text-error">{$errors.pilotCallsign}</span>
+						</div>
+					{/if}
+				</div>
+
 				<div class="form-control mt-4">
 					<label for="interactionDate" class="label">
 						<span class="label-text">Date of Interaction</span>

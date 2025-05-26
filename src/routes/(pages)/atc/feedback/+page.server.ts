@@ -13,6 +13,7 @@ const limiter = new RateLimiter({ IPUA: [1, 'm'] });
 
 const feedbackFormSchema = z.object({
 	pilotName: z.string().min(1, 'Required.'),
+	pilotCallsign: z.string().min(1, 'Required.'),
 	interactionDate: z.date(),
 	atcName: z.string().min(1, 'Required.'),
 	atcCallsign: z.string().min(1, 'Required.'),
@@ -48,6 +49,7 @@ export const actions: Actions = {
 		                <h2 style="color: #333">ATC Feedback Form Submission</h2>
 
 		                <p style="color: #555"><strong>Pilot Name:</strong> ${form.data.pilotName}</p>
+                        <p style="color: #555"><strong>Pilot Callsign:</strong> ${form.data.pilotCallsign}</p>
 		                <p style="color: #555"><strong>Interaction Date:</strong> ${form.data.interactionDate.toLocaleDateString()}</p>
 		                <p style="color: #555"><strong>ATC Name:</strong> ${form.data.atcName}</p>
                         <p style="color: #555"><strong>ATC Callsign:</strong> ${form.data.atcCallsign}</p>
